@@ -25,5 +25,5 @@ async def get_session() -> AsyncIterator[AsyncSession]:
         yield session
 
 
-# алиас для упрощения аннотации типа
-SessionDep = Annotated[AsyncSession, Depends(get_session)]
+# alias для упрощения аннотации типа
+type SessionDep = Annotated[AsyncSession, Depends(get_session)]
