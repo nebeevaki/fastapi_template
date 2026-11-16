@@ -40,5 +40,6 @@ select = [
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]  # устанавливаем папку для тестов
+pythonpath = ["."]  # добавляет корневую директорию проекта в путь поиска модулей Python при запуске тестов
 asyncio_mode = "auto"  # автоматическая обработка асинхронных тестовых функций
 asyncio_default_fixture_loop_scope = "function"  # область действия event loop на уровне отдельной тестовой функции
